@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 { font-size: 1.75rem; margin: 0 0 1rem; }
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #0b5ed7;
+  border-radius: 4px;
+  background: #0b5ed7;
+  color: #fff;
+  cursor: pointer;
+}
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; }
+
+.btn-ghost {
+  background: transparent;
+  color: #1a1a1a;
+  border-color: #c7c7c7;
+}
+
+.btn-danger {
+  background: transparent;
+  color: #b42318;
+  border-color: #b42318;
+}
+
+.list { list-style: none; padding: 0; margin: 0; }
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-title { flex: 1; }
+.item-title.done { text-decoration: line-through; color: #888; }
+
+.item-edit {
+  flex: 1;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+}
+
+.empty { color: #888; font-style: italic; }
+
+.error { color: #b42318; margin: 0 0 0.75rem; font-size: 0.9rem; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
